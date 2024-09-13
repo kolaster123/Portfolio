@@ -2,6 +2,7 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+<<<<<<< HEAD
   font-style: normal;
   color: white;
   opacity: 100%;
@@ -15,17 +16,40 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+=======
+  line-height: 1.5;
+  font-style: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+>>>>>>> 9a5df64 (template complete)
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background-color: #242424;
+  padding: 0 1.5em;
+}
+
+>>>>>>> 9a5df64 (template complete)
 nav {
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   left: 0;
   width: 100%;
   padding: 0;
@@ -44,10 +68,80 @@ hr {
   font-weight:900;
   padding: 10px;
 } 
+=======
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 0.75em 0;
+  z-index: 10;
+}
+
+nav a {
+  margin: 0 1.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+header {
+  text-align: center;
+  margin-top: 6em;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header .title {
+  font-size: 1.5em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.socials button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.socials img {
+  width: 2.5em;
+  height: 2.5em;
+  filter: brightness(90%) contrast(105%) sepia(25%) hue-rotate(215deg) saturate(90%);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.socials img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+section {
+  margin-top: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+>>>>>>> 9a5df64 (template complete)
 
 .projects-container {
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
   align-items: flex-start;
   gap: 20px; /* Adjusts spacing between images */
   flex-wrap: wrap; /* Allows images to wrap if necessary */
@@ -79,4 +173,75 @@ hr {
   margin: auto;
   width: 80%;
   height: 80%;
+=======
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+}
+
+.project-item {
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.projects {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.technologies img {
+  width: 60px;
+  height: 60px;
+  filter: grayscale(50%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.technologies img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 60%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+form button {
+  padding: 0.75em 2em;
+  border: none;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color:
+>>>>>>> 9a5df64 (template complete)
 }

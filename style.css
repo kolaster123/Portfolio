@@ -127,28 +127,38 @@ header .title {
 
 .socials {
   display: flex;
-  justify-content: center;
-  gap: 1em;
+  flex-direction: column; /* Stack text and buttons vertically */
+  align-items: center; /* Center-align the content */
+  gap: 1em; /* Space between the heading and buttons */
   margin: 2em 0;
+  text-align: center;
+}
+
+.socials .button-container {
+  display: flex; /* Align buttons horizontally */
+  justify-content: center;
+  gap: 0.5em; /* Space between the buttons */
 }
 
 .socials button {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0; /* Remove extra padding */
 }
 
 .socials img {
-  width: 2.5em;
-  height: 2.5em;
-  filter: brightness(90%) contrast(105%) sepia(25%) hue-rotate(215deg) saturate(90%);
-  transition: transform 0.3s, opacity 0.3s;
+  width: 4em; /* Adjust size as needed */
+  height: 4em;
+  filter: brightness(0) invert(1); /* Make the images white */
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .socials img:hover {
-  opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.2); /* Slight hover effect */
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 10px white); /* Add glow effect */
 }
+
 
 section {
   margin-top: 4em;
